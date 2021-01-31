@@ -1,0 +1,27 @@
+.to-do-list {
+  border: 2px solid white;
+  background-color: bisque;
+  margin: 20px;
+  padding-left: 10px;
+  width: 300px;
+  min-height: 200px;
+}
+
+.input-list {
+  display: grid;
+  grid-template-columns: 90% auto;
+}
+
+.input-list span {
+  font-weight: bold;
+  order: 1;
+}
+
+.input-list input {
+  order: 2;
+}
+
+input:checked + span {
+  color: brown;
+  text-decoration: line-through;
+}
